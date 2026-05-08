@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "Начало";
+}
+
+<div class="text-center py-5">
+    <h1 class="display-4 fw-bold">📚 Библиотечна система</h1>
+    <p class="lead text-muted">Управлявайте книги, автори, членове и заеми на едно място</p>
+    <hr class="my-4" />
+</div>
+
+<div class="row text-center mt-4">
+    <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+                <div class="display-5 mb-3">📖</div>
+                <h5 class="card-title fw-bold">Автори</h5>
+                <p class="card-text text-muted">Преглед и управление на всички автори в системата</p>
+                <a asp-controller="Authors" asp-action="Index" class="btn btn-dark mt-2">Виж автори</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+                <div class="display-5 mb-3">📚</div>
+                <h5 class="card-title fw-bold">Книги</h5>
+                <p class="card-text text-muted">Разгледайте наличните книги в библиотеката</p>
+                <a asp-controller="Books" asp-action="Index" class="btn btn-dark mt-2">Виж книги</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+                <div class="display-5 mb-3">👥</div>
+                <h5 class="card-title fw-bold">Членове</h5>
+                <p class="card-text text-muted">Управлявайте членовете на библиотеката</p>
+                <a asp-controller="Members" asp-action="Index" class="btn btn-dark mt-2">Виж членове</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+        <div class="card h-100 shadow-sm border-0">
+            <div class="card-body">
+                <div class="display-5 mb-3">📋</div>
+                <h5 class="card-title fw-bold">Заеми</h5>
+                <p class="card-text text-muted">Следете заемите и връщанията на книги</p>
+                <a asp-controller="Loans" asp-action="Index" class="btn btn-dark mt-2">Виж заеми</a>
+            </div>
+        </div>
+    </div>
+</div>
